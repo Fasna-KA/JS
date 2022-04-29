@@ -9,7 +9,84 @@
 <body>
     
 <div>
-    
+ 1. return N.toString().length;
+
+<!-- or -->
+1.const Find_Digits = (N) =>
+{
+  var count=0;
+	
+  if(N>=1)
+  count++;
+  while(N/10>=1)
+  {
+    N= N/10;
+    ++count;
+  }
+return count;
+};
+
+2.let p, count = 0;
+while(N!==0)
+{
+  p=N%10;
+  N=parseInt(N/10);
+  if(p==5)
+  {
+    ++count;
+  }
+}
+return count++; 
+
+3. var r=0;
+for(let i=1; i<=n; i++){
+  if(i%2===0){
+    r = r+i;
+  }
+}return r;
+
+4.var sum=0
+while(N){
+  sum = sum +N%10;
+  N = Math.floor(N/10);
+}return sum;
+
+5.for(let i=2; i<=N; i++){
+  if(i==2){
+    console.log(i);
+  }else if(i%2!==0){
+    console.log(i);
+  }
+}
+
+6.var str=" "
+for(i=1;i<=N;i++){
+  for(j=1;j<=i;j++){
+    str+= "*"
+  }
+  str+= "\n"
+}
+console.log(str)
+
+7.if(N===1){
+  return "NO"
+}
+else if(N===2){
+    return "YES"
+
+}
+else{
+  for(i=0;i<N;i++){
+    if(N%2===0){
+      return "NO"
+    }
+    else{
+      return "YES"
+    }
+  }
+}
+
+   
 8.for(var i=1;i<=n;i++){
     console.log(i)
   }
