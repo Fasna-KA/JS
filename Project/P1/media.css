@@ -1,4 +1,7 @@
-@media(max-width:1500px){
+
+@media only screen      
+and (max-device-width : 1024px) 
+{
     body{
         width: 575px;
         height: 840px;
