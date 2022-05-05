@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+1.const res=array.reduce((accu,cur)=>accu=accu*cur,1);
+return res;
+
+2.const res=array.reduce((accu,cur)=>accu=accu+cur,0);
+return res;
+
+3.count occurances
+const findCount = (N, K, Arr) => 
+    {
+      let c=0;
+      for(let i=0;i<N;i++)
+      {
+        if(Arr[i]==K)
+        {
+          c++;
+        }
+      }
+       
+       return c;
+        
+    };
+
+4.Even odd
+    let evenSum=0;
+    let oddSum=0;
+    let B=[];
+    for(let i=0;i<N;i++){
+      if(Arr[i]%2===0){
+        evenSum=evenSum+Arr[i];
+      }
+    }
+    B.unshift(evenSum);
+    
+    for(let j=0;j<N;j++){
+      if(Arr[j]%2!==0){
+        oddSum=oddSum+Arr[j];
+      }
+    }
+    B.push(oddSum);
+    return B;
+
+    <!-- or 
+        const findEvenOdd = (N, Arr) => 
+        {
+            
+            let B=[]
+            
+             var a=Arr.filter((X)=>X%2===0);
+            var b=a.reduce((accu,cum)=>accu+cum,0)
+            B.push(b)
+            
+          
+            var c=Arr.filter((X)=>X%2!==0);
+            var d=c.reduce((accu,cum)=>accu+cum,0)
+            B.push(d)
+            return B;
+            
+            
+        };
+         
+         -->
+
+
+5.no is presnt or not
+if(array.indexOf(M)==-1)
+    return 'NO'
+    else{
+    return 'YES'
+  }
+
+
+
+6.let res=Arr.filter((N)=>N>=18)
+return res;
+
+7.const res=array.map((N)=>N+1)
+ console.log(...res);
+
+8.pass or fail
+const isAllPass = (N, Arr) => 
+    {
+      
+      let c=0;
+      for(let i=0;i<N;i++)
+      {
+        if(Arr[i]<32)
+        {
+          c++;
+        }
+      }
+      
+      if(c>0)
+      {
+        return "NO";
+      }
+      else{
+        return "YES";
+      }
+        
+    };
+
+ 
+9.let unique=arr.filter((value)=>arr.indexOf(value)===arr.lastIndexOf(value));
+return (unique.length)
+
+10.let res=Math.min(...arr){
+return res;
+}
+fuction arrayMath(arr){
+    let res2=Math.max(...arr)
+    return res2;
+}
+
+
+</body>
+</html>
