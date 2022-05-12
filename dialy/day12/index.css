@@ -1,0 +1,17 @@
+.test{
+    display: flex;
+    flex-direction: row;
+}
+.test1{
+    width: 10vw;
+    height: 20vh;
+    background-color: black;
+    margin: 10px;
+    border-radius: 10px;
+
+
+
+}
+.item{
+    color: brown;
+}
