@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    1.function Check(obj1){
+        obj1.setter = function(){
+          console.log(this.name);
+        };
+       }
+   or
+     function Check(obj1)
+{
+   obj1.setter=function ()
+   {
+    console.log(obj1.name)
+  }
+  
+}
+
+    2.return(delete obj1.rollno); 
+        or
+        function Check(obj1) {
+            delete obj1.rollno; 
+            return obj1;
+          }
+    3.function Check(obj1) {
+        if(obj1.salary>=500000){
+          return "Dream";
+        }else{
+          return "NotDream";
+        }
+     }
+     4.function Check(obj1) {
+        for(var prop in obj1) {
+              if(obj1.hasOwnProperty(prop))
+                  return "true";
+          }
+      
+          return "false";
+      }
+                or
+         function Check(obj1) {
+             if(Object.entries(obj1).length!==0)
+                     return "true";
+                     else
+                     return "false";
+                  }  
+        5.   function Check(obj1,obj2) {
+  
+            let merge = Object.assign(obj1,obj2);
+            return merge;
+         }
+         or
+         6.function Check(a,obj1) {
+
+            obj1.id = obj1.id * a;
+            obj1.houseno = obj1.houseno * a;
+            return obj1;
+          }
+          or
+          
+            for(let key in obj1){
+                obj1[key] = obj1[key] * a;
+            }
+            return obj1; 
+        7.
+        function Check(obj1) {
+          let sum = 0;
+          for(const key in obj1){
+            sum += obj1[key];
+          }
+          return sum;
+        }
+        or
+        function Check(obj1) {
+            const sumValues = obj1 => Object.values(obj1).reduce((a,b)=>a+b);
+            const sum = sumValues(obj1);
+            return sum;
+          }
+        8.function check(obj1,a,b) {
+            if(obj1.id==b && obj1.name==a){
+                   return "true";
+                 } 
+                 else{
+                   return "false";
+               }
+         }
+         
+</body>
+</html>
