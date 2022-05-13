@@ -30,7 +30,7 @@ console.log(list.map(a=>a.name));
 //['John', 'Wick']
 
 //6
-const students=studentRecords.filter(b=>b.id>120).reduce((acc,cur)=>acc+cur.marks,0)
+const students=studentRecords.filter(b=>b.id>120).reduce((acc,cur)=>acc+=cur.marks,0)
 console.log(students);//143
 
 //7.
