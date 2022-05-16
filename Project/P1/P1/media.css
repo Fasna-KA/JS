@@ -1,0 +1,78 @@
+@media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px) 
+ 
+{
+    body{
+        width: 575px;
+        height: 840px;
+    }
+    .i1{
+        width: auto;
+    }
+    .i2{
+        position: absolute;
+        top: 17vh;
+        left: 124px;
+        width: 566px;
+
+    }
+    .s1{
+        position: absolute;
+        left: 194px;
+        top:19vh;
+    }
+    .s2{
+        position: absolute;
+        left: 224px;
+        top: 21vh;
+    }
+
+    .i3{
+        position: absolute;
+        top: 35vh;
+
+    }
+    .i4{
+        position: absolute;
+        top: 77vh;
+    }
+    .pp1{
+        padding-left: 95px;
+    }
+    .i5{
+        position: absolute;
+        top: 87vh;
+        width: 566px;
+    }
+    .i6{
+        position: absolute;
+        top: 97vh;
+        left: 124px;
+        width: 530px;
+        text-align: center;
+
+    }
+    .i7{
+        position: absolute;
+        top: 115vh;
+        left: 124px;
+        width: 566px;
+
+    }
+    .g1{
+        left: 40px;
+    }
+    .i8{
+        position: absolute;
+        top: 130vh;
+        left: 144px;
+
+        
+    }
+    .g2{
+        display: none;
+    }
+
+
+}
