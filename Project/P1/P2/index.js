@@ -20,6 +20,9 @@ function clock() {
    element2[1].innerHTML=m + "<br>mins";
    let element3= document.getElementsByClassName("p2");
    element3[2].innerHTML=s + "<br>secs";
+   let element4= document.getElementsByClassName("p3");
+   element4[0].innerHTML=session;
+
 
 }
 setInterval(clock,1000)
