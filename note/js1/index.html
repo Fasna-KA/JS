@@ -102,6 +102,18 @@ XOR
 a<<b => 0 1 0 1 << 1  => 1 0 1 0 --shift last numbr to left
 a>>b => 0 1 0 1 >> 1  => 0 0 1 0 --shift first numbr to right
 
+call():  it is use for calling the fun , we need to give comma separated..,
+in case of call, each and every arguments which is required to be passed to the function will be passes individually.
+
+displayUserDetails.call(user, "TCS", "developer").
+displayUserDetails(user);
+
+Apply() : each and every arguments which is required to be passed to the function will be inside an array.
+displayUserDetails.apply(user, ["TCS", "developer"]).
+
+bind(): it will return you new function, and this new function , we can call at anytime and anywhere.
+const newFun = displayUserDetails.bind(user);
+newFun("Infosys", "Tester")
 
 
 </body>
