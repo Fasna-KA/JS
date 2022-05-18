@@ -63,6 +63,40 @@ bookie();
 bookie();
 console.dir(bookie);//to see closure
 
+//In Closure even though the execution context is destroyed, the variable environment somehow keeps living somewhere in the engine.
+
+
+let f;
+const g = function(){
+    const a=23;
+
+    f= function(){
+        console.log(a*2);//46
+    };
+};
+
+const h = function(){
+    const b=25;
+
+    f= function(){
+        console.log(b*2);//50
+    };
+};
+
+
+g();
+f();
+
+h();
+f();
+
+console.dir(f)//Closure (g) {a: 23}
+console.dir(f)//closure h
+
+
+bookie();
+console.dir(bookie);//to see closure
+
 
 
 
