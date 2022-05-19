@@ -115,6 +115,46 @@ bind(): it will return you new function, and this new function , we can call at 
 const newFun = displayUserDetails.bind(user);
 newFun("Infosys", "Tester")
 
+what are closures?
+Closures: When a fun is running , there is a another variable , we may access the local variable .........
+It is a combination of inner function and the lexical environment that was created by the inner function.
+We are able to access the variable inside the function becoz of closures.
+
+function outer(){
+  let a =10;
+  function inner() {
+     console.log(a);
+  }
+  inner();
+}
+outer();
+
+Prototypes:
+The prototype is an object that is associated with every functions and objects.
+Prototypes are the mechanism by which JavaScript objects inherit features from one another.
+Prototype is a global property which is available with almost all the objects
+it is like object but it contains methods and the methods can also accept by child object
+prtotoype  inherit features from one another.
+mechanism by which js object inherit features frm other
+Prototype provides various functions for developing JavaScript applications.
+
+function Person (name , age ){
+  this.name = name ;
+  this. age = age;
+  this.Salary = 10000;
+}
+let person1 = new Person ( " Bhagya  " , 21 );
+let person2 = new Person (" Siddhu " , 23);
+console.log(person1);
+console.log(person2 );
+// in case when want to add other properties, in the object created using function constructor.....
+person1.Salary = 2500000;
+console.log(person1);
+
+// in case when you want to add properties inside this function constructor.
+Person.prototype.company = 'walmart';
+person1.company = 'prepbytes';
+console.log(person1.company);
 
 </body>
 </html>
