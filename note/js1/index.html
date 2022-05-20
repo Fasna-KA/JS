@@ -155,6 +155,39 @@ console.log(person1);
 Person.prototype.company = 'walmart';
 person1.company = 'prepbytes';
 console.log(person1.company);
+What is prototype chain?
+Person1 and person2 , these are the ojects using function constructor, so their master or parent be the Person.
+Each Object, array , etc., always contains a prototype property from which we can access all the inbuilt functions.
+Incase of person1 , its prototype level1 is Person function constructor. , then person2 ,its level2 object constructor function.
+and this chain goes on like this until you dont get value of __proto__ as 'null',.This concept is prototype chaining.
+
+
+what are pure functions?
+
+when a same input is passed every time the function will return same output.
+
+function calculate(sum){          2
+   return (sum+ 0.5);         2.5
+}
+calculate(2);    //2.5
+calcualte(5);    //5.5
+A Pure Function is a function (a block of code) that always returns 
+the same result if the same arguments are passed. 
+It does not depend on any state or data change during a program’s execution. 
+Rather, it only depends on its input arguments.
+
+ if u call the functon and input the same value and the output value is always the same that function is a pure function,it dossent get effected by anything except the input valueg
+well if u pass same argument and every time u get different value that is not a pure function
+
+What is the use of setTimeout?
+setTimeout:  after certain time , it will return or print the result.
+clock, netbanking, irctc..
+setTimeout(callback, time-interval);
+setTimeout(()=>{
+   console.log("Hello");
+},2000);
+
+
 
 </body>
 </html>
