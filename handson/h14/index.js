@@ -15,7 +15,7 @@ $("#button").click(function(){
         type:"GET",
         success:function(response){
             console.log(response);
-            document.querySelector("h1").innerHTML=response.title
+            document.querySelector("h1.Head").innerHTML=response.title
         }
 
     })
