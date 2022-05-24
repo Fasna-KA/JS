@@ -5,7 +5,8 @@ function stack() {
 }
 //2.
 let r=document.getElementsByTagName("h1")
-console.log(r);
+console.log(r[0]);
+
 
 //3.
 function currentTime() {
