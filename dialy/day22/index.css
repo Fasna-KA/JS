@@ -1,0 +1,23 @@
+body{
+    background-color: brown;
+    position: absolute;
+    left: 40vw;
+    top: 20vh;
+    align-items: center;
+    
+}
+#form{
+    border-radius: 10px;
+    width: 30vh;
+    height: 50vh;
+    background-color: black;
+    text-align: center;
+    box-shadow:8px 8px 10px grey;
+}
+input{
+    text-align: center;
+}
+
+h1{
+    color: white;
+}
