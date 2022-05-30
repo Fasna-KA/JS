@@ -26,7 +26,14 @@ console.log(spread);
 //After completion of FEC,it will get deleted, and after if all executn completed GEC also get deleted
 
 //5.What is meant by First class functions
-//Function which gets treated as a variable.It can be passed as an argument to other functions,can be returned by another function and can be
+//Function which gets treated as a variable.It can be passed as an argument to other functions,can be returned by another function and can be assigned as a value to a variable.
+const foo = function() {
+          console.log(“Hello World”);
+}
+foo();
+
+
+//O/P : Hello World
 
 //6.what are closures?
 //Closures: When a fun is running , there is a another variable , we may access the local variable .........
