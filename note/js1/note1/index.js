@@ -28,7 +28,7 @@ console.log(spread);
 //5.What is meant by First class functions
 //Function which gets treated as a variable.It can be passed as an argument to other functions,can be returned by another function and can be assigned as a value to a variable.
 const foo = function() {
-          console.log(“Hello World”);
+          console.log("Hello World");
 }
 foo();
 
