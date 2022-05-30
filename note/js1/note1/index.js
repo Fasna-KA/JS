@@ -8,7 +8,7 @@ console.log("Hi"==="Hi");//true
 
 //2.what is spread operator?
 //... allows us to expand an iterable like array into its individual elements
-let Name =["ALTHAF"]
+let Name =['A', 'L', 'T', 'H', 'A', 'F']
 let spread = [...Name]
 console.log(spread);
 
