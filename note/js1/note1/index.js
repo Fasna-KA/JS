@@ -27,13 +27,17 @@ console.log(spread);
 
 //5.What is meant by First class functions
 //Function which gets treated as a variable.It can be passed as an argument to other functions,can be returned by another function and can be assigned as a value to a variable.
-const foo = function() {
-          console.log("Hello World");
+//Always we use arrow ftn
+
+const foo = function(p) {//HOF
+          console.log("Hello World");//Hello World
+          p()
 }
-foo();
+function boo() {//FCF
+  console.log("iam AZHAR BUHAIS");//iam AZHAR BUHAIS
+}
+foo(boo); 
 
-
-//O/P : Hello World
 
 //6.what are closures?
 //Closures: When a fun is running , there is a another variable , we may access the local variable .........
