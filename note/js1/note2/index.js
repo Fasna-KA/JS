@@ -148,7 +148,32 @@ printVowels()
 //A call stack is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its place in a script that calls multiple functions — what function is currently being run and what functions are called from within that function
 //The call stack is used by JavaScript to keep track of multiple function calls. It is like a real stack in data structures where data can be pushed and popped and follows the Last In First Out (LIFO) principle. We use call stack for memorizing which function is running right now.
 
-//9.What is creation phase and execution phase?
+//9. what is execution context
+
+
+// The Execution Context contains the code that's currently running, and everything that aids in its execution.
+
+///During the Execution Context
+//xt run-time, the specific code gets parsed by a parser, the variables and functions are stored in memory, executable byte-code gets generated, and the code gets executed.
+
+//There are two kinds of Execution Context in JavaScript:
+
+//Global Execution Context (GEC)
+//Function Execution Context (FEC)
+
+
+//Global Execution Context (GEC):
+//Whenever the JavaScript engine receives a script file, it first creates a default Execution Context known as the Global Execution Context (GEC).
+
+//The GEC is the base/default Execution Context where all JavaScript code that is not inside of a function gets executed.
+
+
+
+//Function Execution Context (FEC)
+//Whenever a function is called, the JavaScript engine creates a different type of Execution Context known as a Function Execution Context (FEC) within the GEC to evaluate and execute the code within that function.
+
+
+//10.What is creation phase and execution phase?
 
 //In the first stage “Memory allocation”, all the variables will get memory but will not be initialized means their value will not be given and it will be undefined,
 // but functions will get their value or definition at the time of memory allocation only.
@@ -158,7 +183,7 @@ printVowels()
 //After FEP is completed,it got deleted from call stack
 //If all the execution completed,all get deleted from call stack
 
-//10.What are objects in javascript?
+//11.What are objects in javascript?
 
 //An object is a collection of related data and/or functionality
 //(which usually consists of several variables and functions —
@@ -180,7 +205,7 @@ var user= {
 user.name //gives “Rahul”
 user.profession //gives “Teacher”
 
-//11.What is callback hell
+//12.What is callback hell
 
 //each callback takes arguments that have been obtained as a result of previous callbacks. This kind of callback structure leads to lesser code readability and maintainability.
 // We can avoid the callback hell with the help of Promises. Promises in javascript are a way to handle asynchronous operations in Node.
