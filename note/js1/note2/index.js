@@ -116,6 +116,8 @@ outer(inner())//Outer  //we get both
 //7.what is the use of settimeout
 //After certain time,it will return or print result
 //It is WEB API
+//  mainly use in irctc netbanking
+
 setTimeout(() => {
     console.log("have a nice day");
 }, 2000);
@@ -150,7 +152,6 @@ printVowels()
 
 //9. what is execution context
 
-
 // The Execution Context contains the code that's currently running, and everything that aids in its execution.
 
 ///During the Execution Context
@@ -184,6 +185,10 @@ printVowels()
 //If all the execution completed,all get deleted from call stack
 
 //11.What are objects in javascript?
+
+//An object is an unordered collection of key-value pairs. Each key-value pair is called a property.
+//its consists of properties and methods.
+//object have keys which are converted to string types, the properties and method do not follow the insertion order.
 
 //An object is a collection of related data and/or functionality
 //(which usually consists of several variables and functions —
