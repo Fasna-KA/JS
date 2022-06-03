@@ -90,6 +90,32 @@ string.split("").filter(x =>{
 })
 console.log("No of vowels:",vowels);
 
+//9.
+//Print by value:-
+
+//Mechanism of copying function parameter value to another variable
+//Changes made inside the function are not reflected in the original value
+//Makes a copy of the actual parameter
+//Function gets a copy of the actual content
+//Requires memory
+//Requires more time as it invovles copying value
+//function is called by directly passing the value of the variable as an argument.
+// So any changes made inside the function does not affect the original value.
+//In Pass by value, parameters passed as an arguments create its own copy. 
+//So any changes made inside the function is made to the copied value not to the original value .
+
+
+//Pass by Reference: 
+//Mechanism of passing function parameter to function
+//Changes made inside the function are reflected in the original value
+//Address of actual parameter passes to the function
+//Function gets original of variable actual content
+//Requires less memory
+//Requires less time as it is no copying 
+//In Pass by Reference, Function is called by directly passing the reference/address of the variable as an argument. 
+//So changing the value inside the function also change the original value. 
+//In JavaScript array and Object follows pass by reference property.
+//In Pass by reference, parameters passed as an arguments does not create its own copy, it refers to the original value so changes made inside function affect the original value. 
 
 
 
